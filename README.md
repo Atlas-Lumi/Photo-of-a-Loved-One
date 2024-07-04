@@ -1,2 +1,2 @@
-# Photo-of-a-Loved-One
-A mod for The Long Dark
+# Photo of a Loved One
+
