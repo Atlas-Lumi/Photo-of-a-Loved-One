@@ -9,7 +9,7 @@ This mod allows you to carry a customizable picture of something you care about.
 <br> Inspect your picture using T.
 
 ## Known issues
-* Does not work well with SOME gloves, take them off for best results.
+* Animations will break after leaving to the main menu and loading a save again. Looking for a fix.
 
 ## Installation
 
