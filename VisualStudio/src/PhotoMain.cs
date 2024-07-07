@@ -10,7 +10,17 @@ namespace PhotoMod
 
         public override void OnInitializeMelon()
         {
-            loadBundle = AssetBundle.LoadFromFile("Mods/photobundle.unity3d");
+            LoadEmbeddedAssetBundle();
+        }
+
+        private static void LoadEmbeddedAssetBundle()
+        {
+            MemoryStream memoryStream;
+            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("PhotoMod.Resources.photobundle.unity3d");
+            memoryStream = new MemoryStream((int)stream.Length);
+            stream.CopyTo(memoryStream);
+
+            loadBundle = AssetBundle.LoadFromMemory(memoryStream.ToArray());
         }
 
         public override void OnSceneWasInitialized(int level, string name)
@@ -50,14 +60,16 @@ namespace PhotoMod
 
                 if (AA.activationPrevented)
                 {
-                    PhotoAnimation_isRunning = false;
                     AA.Done();
+                    PhotoAnimation_isRunning = false;                 
                     yield break;
                 }
 
                 AA.ActivateTool(AA.ToolPoint.LeftHand, true);
 
                 AA.SendBool(true, "FunnyBool");
+
+                PhotoAnimation_isRunning = false;
 
                 yield break;
             }
