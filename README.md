@@ -6,14 +6,12 @@
 
 This mod allows you to carry a customizable picture of something you care about. Or something funny, your choice.
 
-<br> Inspect your picture using T.
-
-## Known issues
-* Animations will break after leaving to the main menu and loading a save again. Looking for a fix.
+<br> Inspect your picture using T, can be changed in the ModSettings menu.
 
 ## Installation
 
 * Download and install [MelonLoader.Installer.exe](https://github.com/HerpDerpinstine/MelonLoader/releases/latest/download/MelonLoader.Installer.exe)
+* Download and install [ModSettings](https://github.com/DigitalzombieTLD/ModSettings/releases/download/v2.0/ModSettings.zip)
 * Extract the .zip, and move all contents to your /mods folder
 * Change your picture by editing the .png in /PhotoMod
 
