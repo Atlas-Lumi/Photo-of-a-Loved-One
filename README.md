@@ -4,7 +4,7 @@
 
 ## In your pocket, you find an old picture...
 
-This mod allows you to carry a customizable picture of something you care about. Or something funny, your choice.
+Inspired by a S.T.A.L.K.E.R mod of the same name. This mod allows you to carry a customizable picture of something you care about. Or something funny, your choice.
 
 <br> Inspect your picture using T, can be changed in the ModSettings menu.
 
